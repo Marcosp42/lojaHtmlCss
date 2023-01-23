@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+
+/* Cabeçalho
+===========================================================================================
+*/
+header {
+  width: 85%;
+  margin: auto;
+  position: sticky;
+  top: 0px;
+  z-index: 999999;
+  background-color: rgb(14, 14, 20);
+  /* rgb(63, 102, 148) */
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 3px 3px 4px 2px rgba(18, 84, 150, 0.652);
+}
+
+.container-pesquisa {
+  width: 100%;
+  margin: auto;
+  height: 50px;
+  padding: 10px;
+}
+
+
+.nav-pesquisa {
+  float: right;
+  margin-right: 10%;
+}
+
+.nav-pesquisa img {
+  height: 32px;
+  vertical-align: middle;
+}
+
+.nav-pesquisa input {
+  padding: 3px;
+  border-radius: 20px;
+}
+
+/* Barra Lateral
+======================================================================== 
+ */
+.aside-left {
+  position: fixed;
+  top: 10%;
+  left: 20px;
+  width: 60px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgba(0, 0, 255, 0.452);
+  box-shadow: 0px 0px 10px 5px rgb(0, 0, 10);
+  border-radius: 20px;
+  z-index: 9;
+}
+
+.aside-left img {
+  width: 40px;
+  height: 40px;
+}
+
+.aside-left button {
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.aside-left button:hover {
+  scale: 1.3;
+}
+
+/* Banner
+============================================================================
+*/
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 45vmin;
+  padding: 30px 0px 0px 0px;
+}
+
+.banner>img {
+  border-radius: 50px;
+  width: 80%;
+  box-shadow: 0px 0px 15px 3px rgb(0, 0, 0);
+}
+
+.space {
+  width: 100%;
+  margin: auto;
+  margin-top: -27px;
+  height: 90px;
+  border-radius: 30%;
+  box-shadow: 0px 0px 120px 190px rgba(121, 127, 187, 0.155);
+  background-color: rgb(15, 15, 22);
+  border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+/* Produtos 
+==========================================================================================
+*/
+
+.container-pagina-principal {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 22px;
+  background-color: rgb(15, 15, 22);
+  padding: 40px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0px 0px 140px 145px rgba(60, 60, 95, 0.287);
+  border-radius: 60px;
+  border: 1px solid black;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 23%;
+  height: 15vw;
+  margin: 12px;
+  background-color: rgba(255, 255, 255, 0.084);
+  border-radius: 40px;
+  box-shadow: 0px 0px 25px 4px rgb(0, 0, 0);
+  /* rgb(0, 153, 255)*/
+  overflow: hidden;
+  transition: scale 400ms, background-color 500ms, box-shadow;
+  cursor: pointer;
+  text-align: center;
+}
+
+.item img {
+  width: 50%;
+  height: 75%;
+  padding: 5px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
+.item h2 {
+  color: rgb(255, 241, 216);
+  padding: 20px;
+  vertical-align: middle;
+  font-size: 0.7vw;
+}
+
+.item h3 {
+  position: absolute;
+  font-size: 1vw;
+  color: gold;
+  bottom: 30px;
+  right: 40px;
+}
+
+.item:hover h2 {
+  color: aqua;
+  scale: 1.1;
+}
+
+.item:hover h3 {
+  scale: 1.3;
+}
+
+.item:hover img {
+  scale: 1.1;
+}
